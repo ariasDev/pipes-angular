@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class TablePipesComponent implements OnInit {
 
   pipesList: any;
+  urlVideo: string = 'https://www.youtube.com/embed/ISJGSSwpfSo'
 
   constructor() { }
 

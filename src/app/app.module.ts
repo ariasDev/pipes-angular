@@ -5,12 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TablePipesComponent } from './components/table-pipes/table-pipes.component';
 import { CapitalizePipe } from './utils/pipes/capitalize.pipe';
+import { DomSanitizerPipe } from './utils/pipes/dom-sanitizer.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     TablePipesComponent,
-    CapitalizePipe
+    CapitalizePipe,
+    DomSanitizerPipe
   ],
   imports: [
     BrowserModule,

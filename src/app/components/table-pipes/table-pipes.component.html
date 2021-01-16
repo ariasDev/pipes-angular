@@ -46,3 +46,14 @@
         </tr>
     </tbody>
 </table>
+<hr>
+
+<div style="padding-top: 20px;">
+    <h3 style="text-align: center;">DomSanitizer</h3>
+    <div style="display: flex; justify-content: center;">
+        <iframe width="560" height="315" [src]="urlVideo | domSanitizer" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+        </iframe>
+    </div>
+</div>
