@@ -1,59 +1,61 @@
-<table class="table">
-    <thead class="thead-dark">
-        <tr>
-            <th scope="col">Input</th>
-            <th scope="col">Pipe</th>
-            <th scope="col">Use</th>
-            <th scope="col">Output</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>{{pipesList[0].input}}</td>
-            <td class="highlight">{{pipesList[0].pipe}}</td>
-            <td>{{pipesList[0].use}}</td>
-            <td>{{pipesList[0].input | uppercase}}</td>
-        </tr>
-        <tr>
-            <td>{{pipesList[1].input}}</td>
-            <td class="highlight">{{pipesList[1].pipe}}</td>
-            <td>{{pipesList[1].use}}</td>
-            <td>{{pipesList[1].input | lowercase}}</td>
-        </tr>
-        <tr>
-            <td>{{pipesList[2].input}}</td>
-            <td class="highlight">{{pipesList[2].pipe}}</td>
-            <td>{{pipesList[2].use}}</td>
-            <td>{{pipesList[2].input | number:'1.0-3'}}</td>
-        </tr>
-        <tr>
-            <td>{{pipesList[3].input}}</td>
-            <td class="highlight">{{pipesList[3].pipe}}</td>
-            <td>{{pipesList[3].use}}</td>
-            <td>{{pipesList[3].input | percent:'2.0-2' }}</td>
-        </tr>
-        <tr>
-            <td>{{pipesList[4].input}}</td>
-            <td class="highlight">{{pipesList[4].pipe}}</td>
-            <td>{{pipesList[4].use}}</td>
-            <td>{{pipesList[4].input | currency }}</td>
-        </tr>
-        <tr>
-            <td>{{pipesList[5].input}}</td>
-            <td class="highlight">{{pipesList[5].pipe}}</td>
-            <td>{{pipesList[5].use}}</td>
-            <td>{{pipesList[5].input | capitalize }}</td>
-        </tr>
-    </tbody>
-</table>
-<hr>
+<div class="container">
+    <table class="table">
+        <thead class="thead-dark">
+            <tr>
+                <th scope="col">Input</th>
+                <th scope="col">Pipe</th>
+                <th scope="col">Use</th>
+                <th scope="col">Output</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>{{pipesList[0].input}}</td>
+                <td class="highlight">{{pipesList[0].pipe}}</td>
+                <td>{{pipesList[0].use}}</td>
+                <td>{{pipesList[0].input | uppercase}}</td>
+            </tr>
+            <tr>
+                <td>{{pipesList[1].input}}</td>
+                <td class="highlight">{{pipesList[1].pipe}}</td>
+                <td>{{pipesList[1].use}}</td>
+                <td>{{pipesList[1].input | lowercase}}</td>
+            </tr>
+            <tr>
+                <td>{{pipesList[2].input}}</td>
+                <td class="highlight">{{pipesList[2].pipe}}</td>
+                <td>{{pipesList[2].use}}</td>
+                <td>{{pipesList[2].input | number:'1.0-3'}}</td>
+            </tr>
+            <tr>
+                <td>{{pipesList[3].input}}</td>
+                <td class="highlight">{{pipesList[3].pipe}}</td>
+                <td>{{pipesList[3].use}}</td>
+                <td>{{pipesList[3].input | percent:'2.0-2' }}</td>
+            </tr>
+            <tr>
+                <td>{{pipesList[4].input}}</td>
+                <td class="highlight">{{pipesList[4].pipe}}</td>
+                <td>{{pipesList[4].use}}</td>
+                <td>{{pipesList[4].input | currency }}</td>
+            </tr>
+            <tr>
+                <td>{{pipesList[5].input}}</td>
+                <td class="highlight">{{pipesList[5].pipe}}</td>
+                <td>{{pipesList[5].use}}</td>
+                <td>{{pipesList[5].input | capitalize }}</td>
+            </tr>
+        </tbody>
+    </table>
+    <hr>
 
-<div style="padding-top: 20px;">
-    <h3 style="text-align: center;">DomSanitizer</h3>
-    <div style="display: flex; justify-content: center;">
-        <iframe width="560" height="315" [src]="urlVideo | domSanitizer" frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen>
-        </iframe>
+    <div style="padding-top: 20px;">
+        <h3 style="text-align: center;">DomSanitizer</h3>
+        <div style="display: flex; justify-content: center;">
+            <iframe width="560" height="315" [src]="urlVideo | domSanitizer" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+            </iframe>
+        </div>
     </div>
 </div>
